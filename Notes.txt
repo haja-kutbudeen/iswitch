@@ -1,0 +1,48 @@
+----------------------------------------------------------------------------------------------------------------
+React Native Project Setup
+----------------------------------------------------------------------------------------------------------------
+
+• Step 0:
+npm uninstall -g react-native-cli
+
+• Step 1:
+npx react-native init iswitch
+
+• Step 2:
+sudo npm install
+
+• Step 3:
+rename App.tsx -> App.jsx
+`
+import React from 'react';
+import { View, Text } from 'react-native';
+
+const App = () => (
+  <View>
+    <Text>Hello, World!</Text>
+  </View>
+);
+
+export default App;
+`
+npm uninstall typescript @types/react @types/react-native
+
+• Step 5:
+cd /Users/macbook/Documents/GitHub/iswitch/android
+echo "sdk.dir=/Users/macbook/Library/Android/sdk" > local.properties
+
+• Step 6:
+cd android
+./gradlew clean
+
+• Step 7:
+Android device -> Settings- > About phone and tap Build number seven times to enable Developer Options
+Settings -> Developer Options -> Enable USB Debugging
+
+• Step 7:
+npx react-native start
+
+----------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------
+
